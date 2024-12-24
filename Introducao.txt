@@ -1,0 +1,44 @@
+O ReactJS é uma biblioteca JavaScript desenvolvida pelo Facebook para a criação de interfaces de usuário (UI). Ele é amplamente utilizado para construir aplicações web de página única (SPAs) e permite que os desenvolvedores criem componentes reutilizáveis que gerenciam seu próprio estado.
+
+Aqui estão alguns pontos-chave sobre o ReactJS:
+
+Componentes: React permite a criação de componentes independentes e reutilizáveis, que podem ser combinados para formar interfaces complexas.
+Virtual DOM: Utiliza um DOM virtual para melhorar o desempenho. Em vez de atualizar o DOM real diretamente, o React faz mudanças no DOM virtual e, em seguida, sincroniza essas mudanças de forma eficiente com o DOM real.
+JSX: Uma extensão de sintaxe que permite escrever HTML dentro do JavaScript, tornando o código mais legível e fácil de escrever.
+Unidirectional Data Flow: O fluxo de dados unidirecional facilita o rastreamento de mudanças no estado da aplicação, tornando a depuração mais simples.
+
+ Aqui está um exemplo básico de uma aplicação ReactJS que exibe uma lista de tarefas simples
+
+import React, { useState } from 'react';
+
+function App() {
+  const [tasks, setTasks] = useState([]);
+  const [newTask, setNewTask] = useState('');
+
+  const addTask = () => {
+    if (newTask.trim()) {
+      setTasks([...tasks, newTask]);
+      setNewTask('');
+    }
+  };
+
+  return (
+    <div>
+      <h1>Lista de Tarefas</h1>
+      <input
+        type="text"
+        value={newTask}
+        onChange={(e) => setNewTask(e.target.value)}
+        placeholder="Nova tarefa"
+      />
+      <button onClick={addTask}>Adicionar</button>
+      <ul>
+        {tasks.map((task, index) => (
+          <li key={index}>{task}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default App;
