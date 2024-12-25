@@ -14,7 +14,7 @@ function App() {
   return (
     <div>
       <h1>Meu primeiro título com o React {numeroAleatorio}</h1>
-      <Subtitulo />
+      <Subtitulo autor={"Sivaldo Vieira"} />
       <button onClick={trocarNumeroAleatorio}>Novo Número Aleatório</button>
     </div>
   );
