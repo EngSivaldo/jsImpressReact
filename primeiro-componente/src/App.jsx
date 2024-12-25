@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Subtitulo } from './subtitulo.jsx'
 import './App.css';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
   return (
     <div>
       <h1>Meu primeiro título com o React {numeroAleatorio}</h1>
+      <Subtitulo />
       <button onClick={trocarNumeroAleatorio}>Novo Número Aleatório</button>
     </div>
   );
