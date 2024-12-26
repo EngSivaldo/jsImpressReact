@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import ItemsContainer from './itemsContainer';
+import  ItemsContainer from './itemsContainer';
+import AddItemsContainer from './AddItemsContainer';
 import './App.css';
 
 function App() {
@@ -10,11 +11,22 @@ function App() {
     newList.splice(itemIndex, 1);
     setTaskList(newList);
 
+  };
+  const addToList = (item) => {
+    // const newList = [...taskList];
+    // newList.push(item);
+    // setTaskList(newList);
+    setTaskList([...taskList, item]);
+
   }
+
+
+
+
   return (
     <div>
       <h1>Minha lista de tarefas do dia</h1>
-      <h2>Adição de tarefas</h2>
+      <AddItemsContainer addToList={addToList} />
       <ItemsContainer taskList={taskList} removeFromList={removeFromList} />
     </div>
   );
