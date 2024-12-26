@@ -1,68 +1,91 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* App.css */
+
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  color: #333;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Estilos para o contêiner principal */
+.app-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Estilos para o AddItemsContainer */
+.add-items-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
-.card {
-  padding: 2em;
+.add-items-container input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
 }
 
-.read-the-docs {
-  color: #888;
+.add-items-container button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-items-container button:hover {
+  background-color: #218838;
+}
+
+/* Estilos para o ItemsContainer */
+.itemsContainer {
+  list-style: none;
+  padding: 0;
+  width: 100%;
 }
 
 .task-item {
   display: flex;
-  justify-content: space-around;
-  & > p{
-    width: 20%;
-    
-  }
-
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
 }
 
-.itemsContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+.task-item p {
+  margin: 0;
 }
 
-.add-items-container {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 2rem;
-  & > input {
-    width: 20%;
-  }
+.task-item button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #dc3545;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
+.task-item button:hover {
+  background-color: #c82333;
 }
