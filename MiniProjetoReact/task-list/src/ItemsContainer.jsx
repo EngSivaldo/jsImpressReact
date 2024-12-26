@@ -1,11 +1,11 @@
 import TaskItem from "./TaskItem";
 
-const ItemsContainer = ({ taskList }) => {
+const ItemsContainer = ({ taskList, removeFromList }) => {
 
   return (
    <div>
      {taskList.map((t) => (
-      <TaskItem task={t} />))}
+      <TaskItem task={t} removeFromList={removeFromList}/>))}
    </div>
    )
 }
