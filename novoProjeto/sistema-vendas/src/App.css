@@ -1,0 +1,151 @@
+/* App.css */
+
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden; /* Evita rolagem */
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos para o contêiner principal */
+.app-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  max-height: 90vh; /* Limita a altura máxima */
+  overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos para o menu de navegação */
+nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+nav button {
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+nav button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para o AddItemsContainer */
+.add-items-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.add-items-container input,
+.add-items-container select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.add-items-container button {
+  padding: 10px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Adicione esta regra ao seu arquivo App.css */
+
+/* Estilos para o botão Adicionar Produto */
+.add-items-container button:first-of-type {
+  margin-bottom: 10px; /* Ajuste o valor conforme necessário */
+}
+
+.add-items-container button:hover {
+  background-color: #218838;
+}
+
+/* Estilos para a mensagem de confirmação */
+.add-items-container p {
+  color: green;
+  font-weight: bold;
+}
+
+/* Estilos para o ItemsContainer */
+.itemsContainer {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.task-item p {
+  margin: 0;
+}
+
+.task-item button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #dc3545;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-item button:hover {
+  background-color: #c82333;
+}
+
+
+/* Adicione estas regras ao seu arquivo App.css */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
