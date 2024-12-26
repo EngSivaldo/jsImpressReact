@@ -1,7 +1,15 @@
+import TaskItem from "./TaskItem";
+
 const ItemsContainer = ({ taskList }) => {
 
-  return <p>{taskList[1]}</p>
+  return (
+   <div>
+     {taskList.map((t) => (
+      <TaskItem task={t} />))}
+   </div>
+   )
 }
 
 
 export default ItemsContainer;
+//É invocado no app.jsx
