@@ -87,5 +87,9 @@ h1 {
 }
 
 .task-item button:hover {
-  background-color: #c82333;
+  background-color: #dc3545;
+}
+
+.bottom-border {
+  border-bottom: 3px solid rgb(146, 19, 19);
 }

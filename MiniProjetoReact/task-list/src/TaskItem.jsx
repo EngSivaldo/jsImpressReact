@@ -1,8 +1,8 @@
 // Define o componente funcional TaskItem que recebe duas props: task e removeFromList
-const TaskItem = ({ task, removeFromList }) => {
+const TaskItem = ({ task, removeFromList, showBorderBottom}) => {
   // Retorna um contêiner div que representa um item de tarefa
   return (
-    <div className="task-item">
+    <div className={`task-item ${showBorderBottom ? "bottom-border" : ''}`}>
       {/* Exibe a tarefa em um parágrafo */}
       <p>{task}</p>
       {/* Botão para remover a tarefa da lista */}
