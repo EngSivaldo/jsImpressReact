@@ -1,25 +1,24 @@
 import { useState } from 'react';
-import DualColorTitle from './DualColorTitle';
+import { DualColorTitle, MemoizedDualColorTitle } from './DualColorTitle';
 import './App.css';
 
 function App() {
   // Define um estado chamado titleText com valor inicial 'Novo título da minha página'
   const [titleText, setTitleText] = useState('Novo título da minha página');
-
+  const [booleanState, setBooleanState] = useState(false);
   // Função que será chamada quando o botão for clicado
   const changeTitle = () => {
-    console.log('Fui executada!');
-    console.log('O valor atual de titleText é: ', titleText);
     // Atualiza o estado titleText adicionando um 'a' ao final do texto atual
     setTitleText(titleText + 'a');
   };
-
+ console.log('componente app se renderizou')
   return (
     <div>
+      <input type="checkbox" checked={booleanState} onChange={() => setBooleanState(!booleanState)}/>
       {/* Botão que chama a função changeTitle quando clicado */}
       <button onClick={changeTitle}>mudar texto</button>
       {/* Componente DualColorTitle que recebe titleText como prop */}
-      <DualColorTitle title={titleText} />
+      <MemoizedDualColorTitle title={titleText} />
     </div>
   );
 }
