@@ -24,4 +24,4 @@ const ItemsContainer = ({ taskList, removeFromList }) => {
 export default ItemsContainer;
 
 
-// Este componente é invocado no app.jsx para renderizar uma lista de tarefas (taskList). Cada tarefa é passada para um componente TaskItem, que também recebe a função removeFromList para permitir a remoção de itens da lista
+// Este componente é invocado no app.jsx para renderizar uma lista de tarefas (taskList). Cada tarefa é passada para um componente TaskItem, que também recebe a função removeFromList para permitir a remoção de itens da lista.

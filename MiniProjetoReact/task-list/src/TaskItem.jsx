@@ -16,4 +16,4 @@ export default TaskItem;
 
 
 
-// Este componente representa um item individual da lista de tarefas. Ele exibe a tarefa e inclui um botão que, quando clicado, chama a função removeFromList passando a tarefa como argumento para removê-la da lista
+// Este componente representa um item individual da lista de tarefas. Ele exibe a tarefa e inclui um botão que, quando clicado, chama a função removeFromList passando a tarefa como argumento para removê-la da lista.
