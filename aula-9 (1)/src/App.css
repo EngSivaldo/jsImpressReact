@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.color-selection {
+  display: flex;
+  gap: 20px; /* Aumentei o espaço entre os quadrados */
+}
+
+.color-box {
+  width: 40px; /* Aumentei o tamanho dos quadrados */
+  height: 40px; /* Aumentei o tamanho dos quadrados */
+  display: inline-block;
+  cursor: pointer;
+}
+
+.color-box.red {
+  background-color: red;
+}
+
+.color-box.green {
+  background-color: green;
+}
+
+.color-box.yellow {
+  background-color: yellow;
+}
+
+.color-box.blue {
+  background-color: blue;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.text-component {
+  font-size: 24px; /* Aumentei o tamanho do texto */
+}
