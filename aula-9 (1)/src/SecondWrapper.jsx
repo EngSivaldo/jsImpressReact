@@ -1,8 +1,7 @@
 import ThirdWrapper from "./ThirdWrapper.jsx";
 
-const SecondWrapper = (props) => {
-  return <ThirdWrapper setColor={props.setColor} />
-
+const SecondWrapper = () => {
+  return <ThirdWrapper />;
 };
 
 export default SecondWrapper;

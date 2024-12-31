@@ -1,19 +1,23 @@
-const ColorSelection = (props) => {
+import { useContext } from "react";
+import { colorContext } from "./App";
+
+const ColorSelection = () => {
+  const { setColor } = useContext(colorContext);
   return (
     <section className="color-selection">
-      <div onClick={() => props.setColor("red")}>
+      <div onClick={() => setColor("red")}>
         <input type="checkbox" name="red" id="red" />
         <label htmlFor="red" className="color-box red"></label>
       </div>
-      <div onClick={() => props.setColor("green")}>
+      <div onClick={() => setColor("green")}>
         <input type="checkbox" name="green" id="green" />
         <label htmlFor="green" className="color-box green"></label>
       </div>
-      <div onClick={() => props.setColor("yellow")}>
+      <div onClick={() => setColor("yellow")}>
         <input type="checkbox" name="yellow" id="yellow" />
         <label htmlFor="yellow" className="color-box yellow"></label>
       </div>
-      <div onClick={() => props.setColor("blue")}>
+      <div onClick={() => setColor("blue")}>
         <input type="checkbox" name="blue" id="blue" />
         <label htmlFor="blue" className="color-box blue"></label>
       </div>

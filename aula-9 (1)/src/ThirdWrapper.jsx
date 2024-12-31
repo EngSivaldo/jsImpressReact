@@ -1,8 +1,7 @@
 import FourthWrapper from "./FourthWrapper";
 
-const ThirdWrapper = (props) => {
-  return <FourthWrapper setColor={props.setColor} />
-
+const ThirdWrapper = () => {
+  return <FourthWrapper />;
 };
 
 export default ThirdWrapper;

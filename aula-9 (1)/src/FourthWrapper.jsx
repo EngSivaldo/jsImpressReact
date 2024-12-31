@@ -1,8 +1,7 @@
 import FifthWrapper from "./FifthWrapper.jsx";
 
-const FourthWrapper = (props) => {
-  return <FifthWrapper setColor={props.setColor} />;
-
+const FourthWrapper = () => {
+  return <FifthWrapper />;
 };
 
 export default FourthWrapper;
